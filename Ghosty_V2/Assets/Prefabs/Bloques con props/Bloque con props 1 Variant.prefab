@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5046401287668929080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527174923224760779, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -280
+      objectReference: {fileID: 0}
+    - target: {fileID: 527174923224760779, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 634
+      objectReference: {fileID: 0}
+    - target: {fileID: 527174923224760779, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 313
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008452511326182109, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008452511326182109, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_CookingOptions
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259246080643018498, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 032c5c2ce299a1b4ab6aa3b3a80949d0,
+        type: 2}
+    - target: {fileID: 7885995875528288822, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885995875528288822, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885995875528288822, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_CookingOptions
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -58.047943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -111.64984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550418044040360346, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071093267783609120, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      propertyPath: m_Name
+      value: Bloque con props 1 Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6888885457871210201, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6745371750283043924}
+    - targetCorrespondingSourceObject: {fileID: 872350739509156721, guid: d56b5054815934f8ca542c89af8c2e91,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8392967772840199074}
+  m_SourcePrefab: {fileID: 100100000, guid: d56b5054815934f8ca542c89af8c2e91, type: 3}
+--- !u!1 &1842631854835897569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6888885457871210201, guid: d56b5054815934f8ca542c89af8c2e91,
+    type: 3}
+  m_PrefabInstance: {fileID: 5046401287668929080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &6745371750283043924
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842631854835897569}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.08, y: 1.015, z: 0.865}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!1 &5337712632451991881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 872350739509156721, guid: d56b5054815934f8ca542c89af8c2e91,
+    type: 3}
+  m_PrefabInstance: {fileID: 5046401287668929080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &8392967772840199074
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5337712632451991881}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.08, y: 1.015, z: 0.865}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
