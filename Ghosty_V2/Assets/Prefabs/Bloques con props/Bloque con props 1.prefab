@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: 4468625496030872218, guid: 7b411647a0fc7c541b5b3e30e734bdd7,
         type: 3}
       propertyPath: m_Name
-      value: Bloque con props 2  Variant
+      value: Bloque con props 1
       objectReference: {fileID: 0}
     - target: {fileID: 4821267555586031124, guid: 7b411647a0fc7c541b5b3e30e734bdd7,
         type: 3}

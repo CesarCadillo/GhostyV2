@@ -107,10 +107,12 @@ PrefabInstance:
     - target: {fileID: 9071093267783609120, guid: d56b5054815934f8ca542c89af8c2e91,
         type: 3}
       propertyPath: m_Name
-      value: Bloque con props 1 Variant
+      value: Bloque con calderos 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3326595426817080801, guid: d56b5054815934f8ca542c89af8c2e91, type: 3}
+    - {fileID: 6104937232747455899, guid: d56b5054815934f8ca542c89af8c2e91, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6888885457871210201, guid: d56b5054815934f8ca542c89af8c2e91,

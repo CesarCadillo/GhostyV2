@@ -475,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 4468625496030872218, guid: 7b411647a0fc7c541b5b3e30e734bdd7,
         type: 3}
       propertyPath: m_Name
-      value: Bloque con pros 10 Variant
+      value: Bloque con calderos 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
