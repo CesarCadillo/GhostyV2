@@ -26,7 +26,7 @@ public class PlayerLife : MonoBehaviour
         {
             deathFeedback.Play();
             scoreScript.SaveHighScore();
-            SceneManager.LoadScene("MENUof");
+            SceneManager.LoadScene("GameOver");
             Destroy(gameObject);
 
         }

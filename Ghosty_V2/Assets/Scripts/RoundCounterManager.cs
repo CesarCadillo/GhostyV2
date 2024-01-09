@@ -38,10 +38,10 @@ public class RoundCounterManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "MENUof")
+        if (SceneManager.GetActiveScene().name == "MENUof" || SceneManager.GetActiveScene().name == "GameOver")
         {
             Instance.round = 1;
-            ScoreCounter.Score = 0;
+            //ScoreCounter.Score = 0;
 
         }
 
