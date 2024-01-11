@@ -356,10 +356,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f05b33c1cc64644f96262625305902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFeedback: {fileID: 1645334635064531154}
   maxLife: 5
   currentLife: 5
   invulnerableState: 0
   spawn: {fileID: 0}
+  secondsToGameOver: 0
+  GameOverNow: 5
 --- !u!114 &-2076769259236622079
 MonoBehaviour:
   m_ObjectHideFlags: 0

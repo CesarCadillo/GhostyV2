@@ -13,6 +13,10 @@ public class PlayerLife : MonoBehaviour
     public Transform spawn;
     ScoreCounter scoreScript;
 
+    //deathAnimationVariables
+    [SerializeField] private float secondsToGameOver;
+    [SerializeField] private float GameOverNow;
+
     void Start()
     {
         invulnerableState = false;
@@ -24,11 +28,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (currentLife <= 0)
         {
-            deathFeedback.Play();
-            scoreScript.SaveHighScore();
-            SceneManager.LoadScene("GameOver");
-            Destroy(gameObject);
-
+            Death();
         }
 
         ChangeMaxLife();
@@ -54,6 +54,32 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
+    private void Death()
+    {
+        
+        PlayerShoot playerShootScript = GetComponent<PlayerShoot>();
+        PlayerMove playerMoveScript = GetComponent<PlayerMove>();
+        BoxCollider playerCollider = GetComponent<BoxCollider>();
+        Rigidbody playerRB = GetComponent<Rigidbody>();
+
+        playerRB.velocity = Vector3.zero;
+        playerRB.useGravity = false;
+        playerShootScript.enabled = false;
+        playerMoveScript.enabled = false;
+        playerCollider.enabled = false;
+        
+        secondsToGameOver += Time.deltaTime;
+        deathFeedback.Play();
+        scoreScript.SaveHighScore();
+
+        if (secondsToGameOver >= GameOverNow)
+        {
+            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject);
+        }
+        
+    }
+
     protected virtual void OnCollisionEnter(Collision collision)
     {
         if (invulnerableState == false && collision.gameObject.CompareTag("Enemy"))
@@ -71,9 +97,13 @@ public class PlayerLife : MonoBehaviour
             ChangeLife(-damageRecieved);
         }
 
-        if (other.gameObject.CompareTag("DeadZone"))
+        if (other.gameObject.CompareTag("DeadZone") && currentLife >= 3)
         {
             transform.position = spawn.position;
+            ChangeLife(-2);
+        }
+        else if (other.gameObject.CompareTag("DeadZone"))
+        {
             ChangeLife(-2);
         }
     }
