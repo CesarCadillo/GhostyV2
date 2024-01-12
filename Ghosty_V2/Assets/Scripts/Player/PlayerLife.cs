@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-    public ParticleSystem deathFeedback;
+    [SerializeField] private GameObject deathFeedback;
     public int maxLife;
     public int currentLife;
     [SerializeField] public bool invulnerableState;
@@ -61,15 +61,17 @@ public class PlayerLife : MonoBehaviour
         PlayerMove playerMoveScript = GetComponent<PlayerMove>();
         BoxCollider playerCollider = GetComponent<BoxCollider>();
         Rigidbody playerRB = GetComponent<Rigidbody>();
+        MeshRenderer playerMeshRenderer = GetComponent<MeshRenderer>();
 
         playerRB.velocity = Vector3.zero;
         playerRB.useGravity = false;
         playerShootScript.enabled = false;
         playerMoveScript.enabled = false;
         playerCollider.enabled = false;
+        playerMeshRenderer.enabled = false;
         
         secondsToGameOver += Time.deltaTime;
-        deathFeedback.Play();
+        deathFeedback.SetActive(true);
         scoreScript.SaveHighScore();
 
         if (secondsToGameOver >= GameOverNow)
