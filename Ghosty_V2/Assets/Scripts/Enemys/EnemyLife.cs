@@ -29,7 +29,7 @@ public class EnemyLife : MonoBehaviour
         
     }
 
-    void ChangeLife(int life)
+    public void ChangeLife(int life)
     {
         currentLife += life;
 

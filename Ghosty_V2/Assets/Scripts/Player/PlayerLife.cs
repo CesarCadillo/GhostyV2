@@ -34,7 +34,7 @@ public class PlayerLife : MonoBehaviour
         ChangeMaxLife();
     }
 
-    protected virtual void ChangeLife(int life)
+    public void ChangeLife(int life)
     {
         currentLife += life;
 

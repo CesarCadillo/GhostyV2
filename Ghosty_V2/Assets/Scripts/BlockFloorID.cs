@@ -16,12 +16,13 @@ public class BlockFloorID : MonoBehaviour
 
     void Start()
     {
-        playerMoveScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
+        if (GameObject.Find("Player") != null)
+            playerMoveScript = GameObject.Find("Player").GetComponent<PlayerMove>();
     }
 
     void Update()
     {
-
+        
     }
 
     private void OnCollisionEnter(Collision collision)

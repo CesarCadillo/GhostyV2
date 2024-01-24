@@ -430,6 +430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ataud Toon
       objectReference: {fileID: 0}
+    - target: {fileID: 7449296938053371031, guid: 97e6d698b9539794fa6489082f3a94ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7794297966011080237, guid: 97e6d698b9539794fa6489082f3a94ac,
         type: 3}
       propertyPath: m_LocalScale.x
