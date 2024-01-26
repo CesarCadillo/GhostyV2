@@ -71,7 +71,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 34a1a8a79c695644ea13f0b42281d49d,
         type: 3}
       propertyPath: m_Name
-      value: Potion Shield
+      value: Potion Shield IG
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34a1a8a79c695644ea13f0b42281d49d,
+        type: 3}
+      propertyPath: m_TagString
+      value: PowerUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

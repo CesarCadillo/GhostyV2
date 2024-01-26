@@ -61,7 +61,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a7100db4445441846a9d161f0a80f214,
         type: 3}
       propertyPath: m_Name
-      value: 'Potion Red Heart '
+      value: Potion Red Heart IG
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7100db4445441846a9d161f0a80f214,
+        type: 3}
+      propertyPath: m_TagString
+      value: PowerUp
       objectReference: {fileID: 0}
     - target: {fileID: 5525436785863557702, guid: a7100db4445441846a9d161f0a80f214,
         type: 3}

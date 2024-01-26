@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 4319666307366922165, guid: 27255714b03604f42a1a5cecfcddf01f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 702.3
+      value: 695.1
       objectReference: {fileID: 0}
     - target: {fileID: 4319666307366922165, guid: 27255714b03604f42a1a5cecfcddf01f,
         type: 3}
@@ -73,6 +73,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4872032259553793982, guid: 27255714b03604f42a1a5cecfcddf01f,
+        type: 3}
+      propertyPath: gameObjectsPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 6721224718222976731, guid: 1c964cf951e7623489c62b9bb9d5a183,
+        type: 3}
+    - target: {fileID: 4872032259553793982, guid: 27255714b03604f42a1a5cecfcddf01f,
+        type: 3}
+      propertyPath: gameObjectsPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 2035273467393114048, guid: 633dd292908ae364cb0a5311956be02b,
+        type: 3}
+    - target: {fileID: 4872032259553793982, guid: 27255714b03604f42a1a5cecfcddf01f,
+        type: 3}
+      propertyPath: gameObjectsPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1140632280105191646, guid: bac1a6b1d96a8424cb700d12eac9c3f3,
+        type: 3}
+    - target: {fileID: 4872032259553793982, guid: 27255714b03604f42a1a5cecfcddf01f,
+        type: 3}
+      propertyPath: gameObjectsPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 7298996046689853259, guid: fe6acee6572698d42bede0c4011d68d0,
+        type: 3}
     - target: {fileID: 8944487005258394098, guid: 27255714b03604f42a1a5cecfcddf01f,
         type: 3}
       propertyPath: m_Name

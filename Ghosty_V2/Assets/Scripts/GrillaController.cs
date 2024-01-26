@@ -305,7 +305,7 @@ public class GrillaController : MonoBehaviour
         a = Random.Range(0, HazardBlockPrefab.Length);
         arrayGridMatrix = new int[][,] { matrix1, matrix2, matrix3, matrix4, matrix5, matrix6, matrix7, matrix8, matrix9, matrix10, matrix11, matrix12, matrix13, matrix14, matrix15, matrix16, matrix17, matrix18, matrix19, matrix20};
         int randomIndex = Random.Range(0, arrayGridMatrix.Length);
-        StartCoroutine(SpawnCubes(/*arrayGridMatrix[randomIndex]*/matrix20));
+        StartCoroutine(SpawnCubes(arrayGridMatrix[randomIndex]));
         Debug.Log(randomIndex);
     }
 

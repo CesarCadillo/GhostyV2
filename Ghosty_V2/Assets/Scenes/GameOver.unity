@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 119173005}
   - component: {fileID: 119173004}
   - component: {fileID: 119173003}
+  - component: {fileID: 119173006}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -333,6 +334,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &119173006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119173002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &438965853
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +776,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 679078152}
   scene: MENUof
+--- !u!1001 &743600744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 479493316891517458, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_Name
+      value: ParticleSystemBlinds
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803161445873570071, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803161445873570071, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803161445873570071, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9017359
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0454
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.94203085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 76.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572441332178460877, guid: def84a33654332849a87f37c7f1f5ed9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: def84a33654332849a87f37c7f1f5ed9, type: 3}
 --- !u!1 &1170130383
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +1004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -271.08, y: 71.109}
+  m_AnchoredPosition: {x: -271.08, y: 71.10901}
   m_SizeDelta: {x: 150.2437, y: 47.9628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1230928799
@@ -1250,8 +1393,8 @@ Canvas:
   m_GameObject: {fileID: 1837690039}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 119173004}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1378,3 +1521,4 @@ SceneRoots:
   - {fileID: 37646459}
   - {fileID: 1837690043}
   - {fileID: 1749115945}
+  - {fileID: 743600744}
