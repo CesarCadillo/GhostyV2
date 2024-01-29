@@ -15,8 +15,7 @@ public class PlayerMove : MonoBehaviour
     public float dashDuration = 0.5f; 
     [SerializeField]
     float dashCooldown = 2.0f; 
-    [SerializeField]
-    AudioClip sonidoDash;
+    [SerializeField] AudioClip sonidoDash;
     private bool canDash = true;
     public bool isCollidingWithSlippery = false;
     public bool isCollidingWithSlow = false;
@@ -84,7 +83,7 @@ public class PlayerMove : MonoBehaviour
 
         //Slow
         if (isCollidingWithSlow == true)
-        {
+        {            
             velocidad = velocidadInicial / 2;
         }
         else if (isCollidingWithSlow == false)

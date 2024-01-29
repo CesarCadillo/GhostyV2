@@ -24,10 +24,7 @@ public class BlockFloorID : MonoBehaviour
 
     void Update()
     {
-        if (BlockIdentification != BlockName.Slow)
-        {
-            GetComponent<AudioSource>().Stop();
-        }
+       
     }
 
     private void OnCollisionEnter(Collision collision)
