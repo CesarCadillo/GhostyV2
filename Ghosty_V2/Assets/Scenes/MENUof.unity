@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioPrincipal: {fileID: 8300000, guid: d8c5ac4506d452342ae966051244e212, type: 3}
-  audioInGame: {fileID: 8300000, guid: 72b56815045d3664ca4882cd4eabbe96, type: 3}
+  audioInGame: {fileID: 8300000, guid: d8a4e06c5b32c2b4a905370850293770, type: 3}
 --- !u!4 &1058322121
 Transform:
   m_ObjectHideFlags: 0

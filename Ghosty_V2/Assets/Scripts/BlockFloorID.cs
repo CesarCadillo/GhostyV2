@@ -11,7 +11,9 @@ public enum BlockName
 
 public class BlockFloorID : MonoBehaviour
 {
-    public BlockName BlockIdentification;
+    [SerializeField] BlockName BlockIdentification;
+    [SerializeField] AudioClip sonidoSouls;   
+    [SerializeField] AudioSource audioSource;
     PlayerMove playerMoveScript;
 
     void Start()
@@ -22,7 +24,10 @@ public class BlockFloorID : MonoBehaviour
 
     void Update()
     {
-        
+        if (BlockIdentification != BlockName.Slow)
+        {
+            GetComponent<AudioSource>().Stop();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -39,6 +44,7 @@ public class BlockFloorID : MonoBehaviour
                     break;
 
                 case BlockName.Slow:
+                    GetComponent<AudioSource>().PlayOneShot(sonidoSouls);
                     playerMoveScript.isCollidingWithSlow = true;
                     break;
 

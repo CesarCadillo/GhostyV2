@@ -17,8 +17,17 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private float secondsToGameOver;
     [SerializeField] private float GameOverNow;
 
+    //DamageFeedbackVariables
+    [SerializeField] Material normalMaterial;
+    [SerializeField] Renderer playerRenderer;
+    [SerializeField] Material damagedMaterial;
+    [SerializeField] int blinkCount = 4;
+    [SerializeField] float blinkDuration = 0.2f;
+
     void Start()
     {
+        playerRenderer = GetComponent<MeshRenderer>();
+        normalMaterial = playerRenderer.material;
         invulnerableState = false;
         spawn = GameObject.Find("Spawn").GetComponent<Transform>();
         scoreScript = GameObject.Find("ScoreManager").GetComponent<ScoreCounter>();
@@ -81,11 +90,25 @@ public class PlayerLife : MonoBehaviour
         }
         
     }
+    public IEnumerator BlinkEffect()
+    {
+        invulnerableState = true;
+        for (int i = 0; i < blinkCount; i++)
+        {
+            playerRenderer.material = damagedMaterial;
+            yield return new WaitForSeconds(blinkDuration / 2);
+
+            playerRenderer.material = normalMaterial;
+            yield return new WaitForSeconds(blinkDuration / 2);
+        }
+        invulnerableState = false;
+    }
 
     protected virtual void OnCollisionEnter(Collision collision)
     {
         if (invulnerableState == false && collision.gameObject.CompareTag("Enemy"))
         {
+            StartCoroutine(BlinkEffect());
             ChangeLife(-1);
         }
     }
@@ -96,18 +119,17 @@ public class PlayerLife : MonoBehaviour
         {
             BulletBehaviourA enemyBullet = other.gameObject.GetComponent<BulletBehaviourA>();
             int damageRecieved = enemyBullet.Damage;
+            StartCoroutine(BlinkEffect());
             ChangeLife(-damageRecieved);
         }
 
-        if (other.gameObject.CompareTag("DeadZone") && currentLife >= 3)
+        if (other.gameObject.CompareTag("DeadZone") )
         {
+            StartCoroutine(BlinkEffect());
             transform.position = spawn.position;
             ChangeLife(-2);
         }
-        else if (other.gameObject.CompareTag("DeadZone"))
-        {
-            ChangeLife(-2);
-        }
+        
     }
 
 

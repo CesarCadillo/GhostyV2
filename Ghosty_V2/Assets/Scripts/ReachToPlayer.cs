@@ -10,12 +10,12 @@ public class ReachToPlayer : MonoBehaviour
 
     public void Start()
     {
+        Player = GameObject.Find("Player").GetComponent<Transform>();
     }
     void Update()
     {
         if (Player != null)
         {
-            Player = GameObject.Find("Player").GetComponent<Transform>();
 
             Vector3 reach = Player.position - transform.position;
             reach.y = -5f;
@@ -23,6 +23,10 @@ public class ReachToPlayer : MonoBehaviour
             Quaternion hook = Quaternion.LookRotation(reach);
 
             transform.rotation = Quaternion.Slerp(transform.rotation, hook, speed * Time.deltaTime);
+        }
+        else
+        {
+            return;
         }
         
     }

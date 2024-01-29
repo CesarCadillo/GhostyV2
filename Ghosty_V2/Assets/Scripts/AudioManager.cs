@@ -46,7 +46,13 @@ public class AudioManager : MonoBehaviour
             ReproducirAudio(audioPrincipal);
         }
     }
-
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Cesar")
+        {
+            audioSource.volume = 0.1f;
+        }
+    }
     private void CambiarAudioSegunEscena(Scene escena, LoadSceneMode modo)
     {
         if (escena.name == "Cesar")

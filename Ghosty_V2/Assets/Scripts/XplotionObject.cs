@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class XplotionObject : MonoBehaviour
 {
+    private PlayerLife playerLife;   
     public Material redMaterial;
     public GameObject explosionParticles;
     public float explosionRadius = 5f;
 
-
-    private void Update()
+    private void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(ExplodeSequence());
-        }
+        playerLife = GameObject.Find("Player").GetComponent<PlayerLife>();
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {        
         if (other.gameObject.CompareTag("PlayerLightBullet") || other.gameObject.CompareTag("PlayerDarkBullet"))
@@ -47,6 +44,7 @@ public class XplotionObject : MonoBehaviour
             if (collider.CompareTag("Player"))
             {
                 collider.GetComponent<PlayerLife>().ChangeLife(-2);
+                playerLife.StartCoroutine(playerLife.BlinkEffect());
             }
             else if (collider.CompareTag("Enemy"))
             {
